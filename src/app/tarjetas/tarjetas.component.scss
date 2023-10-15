@@ -1,0 +1,46 @@
+$magenta: #bb27a7;
+
+.contenedor {
+    overflow: scroll;
+}
+
+ion-card {
+    border-style: solid;
+    border-color: #c6c6c6;
+    box-shadow: none;
+}
+
+ion-card-title,
+p {
+    color: $magenta;
+}
+
+ion-card-title{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: start;
+}
+
+ion-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+.nombrefecha {
+    text-align: start;
+}
+
+.ccvimg {
+    text-align: end;
+}
+
+strong{
+    color: black;
+}
+
+#visa {
+    width: 100px;
+}
+
+.espacio{
+    margin-top: 150px;
+}

@@ -1,0 +1,25 @@
+<div class="espacio"></div>
+<ion-grid [fixed]="true">
+  <ion-row>
+    
+    <ion-col offset="0" size="12" offset-md="3" size-md="7" offset-lg="3.8" size-lg="4.5" id="contenedor">
+        <ion-card *ngFor="let tarjeta of tarjetas" mode="ios">
+          <ion-card-header>
+            <ion-card-title>{{tarjeta.numero}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <div class="nombrefecha">
+              <p><strong>Valido hasta  </strong>{{tarjeta.mes}}/{{tarjeta.year}}</p>
+              <p><strong>{{tarjeta.nombre}}</strong></p>
+            </div>
+
+            <div class="ccvimg">
+              <p><strong>CCV  </strong> ***</p>
+              <img id="visa" src="https://purepng.com/public/uploads/large/purepng.com-visa-logologobrand-logoiconslogos-251519938794uqvcz.png" alt="">
+            </div>
+          </ion-card-content>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
